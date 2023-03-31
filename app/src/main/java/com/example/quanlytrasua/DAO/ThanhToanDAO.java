@@ -17,6 +17,7 @@ public class ThanhToanDAO {
         CreateDatabase createDatabase = new CreateDatabase(context);
         database = createDatabase.open();
     }
+    @SuppressLint("Range")
     public List<ThanhToanDTO> LayDSMonTheoMaDon(int madondat){
         List<ThanhToanDTO> thanhToanDTOS = new ArrayList<>();
         String query = "SELECT * FROM "+CreateDatabase.TBL_CHITIETDONDAT+" ctdd,"+CreateDatabase.TBL_MON+" mon WHERE "

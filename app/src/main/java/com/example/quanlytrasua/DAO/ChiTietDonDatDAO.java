@@ -3,6 +3,7 @@ package com.example.quanlytrasua.DAO;
 import static com.example.quanlytrasua.Database.CreateDatabase.TBL_CHITIETDONDAT_MADONDAT;
 import static com.example.quanlytrasua.Database.CreateDatabase.TBL_CHITIETDONDAT_MAMON;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -24,6 +25,7 @@ public class ChiTietDonDatDAO {
         Cursor cursor = database.rawQuery(query,null);
         return cursor.getCount() != 0;
     }
+    @SuppressLint("Range")
     public int LaySLMonTheoMaDon(int madondat, int mamon){
         int soluong = 0;
         String query = "SELECT * FROM " +CreateDatabase.TBL_CHITIETDONDAT+ " WHERE " + TBL_CHITIETDONDAT_MAMON+

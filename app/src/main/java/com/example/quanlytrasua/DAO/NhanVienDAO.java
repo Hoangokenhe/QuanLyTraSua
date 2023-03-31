@@ -1,5 +1,6 @@
 package com.example.quanlytrasua.DAO;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -51,6 +52,7 @@ public class NhanVienDAO {
         return ktra;
     }
 
+    @SuppressLint("Range")
     public int KiemTraDN(String tenDN, String matKhau){
         String query = "SELECT * FROM " +CreateDatabase.TBL_NHANVIEN+ " WHERE "
                 +CreateDatabase.TBL_NHANVIEN_TENDN +" = '"+ tenDN+"' AND "+CreateDatabase.TBL_NHANVIEN_MATKHAU +" = '" +matKhau +"'";
@@ -74,6 +76,7 @@ public class NhanVienDAO {
         }
     }
 
+    @SuppressLint("Range")
     public List<NhanVienDTO> LayDSNV(){
         List<NhanVienDTO> nhanVienDTOS = new ArrayList<NhanVienDTO>();
         String query = "SELECT * FROM "+CreateDatabase.TBL_NHANVIEN;
@@ -108,6 +111,7 @@ public class NhanVienDAO {
         }
     }
 
+    @SuppressLint("Range")
     public NhanVienDTO LayNVTheoMa(int manv){
         NhanVienDTO nhanVienDTO = new NhanVienDTO();
         String query = "SELECT * FROM "+CreateDatabase.TBL_NHANVIEN+" WHERE "+CreateDatabase.TBL_NHANVIEN_MANV+" = "+manv;
@@ -129,6 +133,7 @@ public class NhanVienDAO {
         return nhanVienDTO;
     }
 
+    @SuppressLint("Range")
     public int LayQuyenNV(int manv){
         int maquyen = 0;
         String query = "SELECT * FROM "+CreateDatabase.TBL_NHANVIEN+" WHERE "+CreateDatabase.TBL_NHANVIEN_MANV+" = "+manv;
