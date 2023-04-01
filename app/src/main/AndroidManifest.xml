@@ -15,6 +15,15 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+        </activity>
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.Register2ndActivity" />
+        <activity android:name=".Activities.WelcomeActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
