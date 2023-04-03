@@ -22,6 +22,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlytrasua.Activities.AddCategoryActivity;
 import com.example.quanlytrasua.Activities.HomeActivity;
+import com.example.quanlytrasua.CustomAdapter.AdapterRecycleViewCategory;
+import com.example.quanlytrasua.CustomAdapter.AdapterRecycleViewStatistic;
 import com.example.quanlytrasua.DAO.DonDatDAO;
 import com.example.quanlytrasua.DAO.LoaiMonDAO;
 import com.example.quanlytrasua.DTO.DonDatDTO;
