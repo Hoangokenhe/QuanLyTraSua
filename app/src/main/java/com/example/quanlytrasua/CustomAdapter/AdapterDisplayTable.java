@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.quanlytrasua.Activities.HomeActivity;
-import com.example.quanlytrasua.Activities.PaymentActivity;
+
 import com.example.quanlytrasua.DAO.BanAnDAO;
 import com.example.quanlytrasua.DAO.DonDatDAO;
 import com.example.quanlytrasua.DTO.BanAnDTO;
@@ -164,11 +164,11 @@ public class AdapterDisplayTable extends BaseAdapter implements View.OnClickList
 
             case R.id.img_customtable_ThanhToan:
                 //chuyển dữ liệu qua trang thanh toán
-                Intent iThanhToan = new Intent(context, PaymentActivity.class);
-                iThanhToan.putExtra("maban",maban);
-                iThanhToan.putExtra("tenban",tenban);
-                iThanhToan.putExtra("ngaydat",ngaydat);
-                context.startActivity(iThanhToan);
+                //Intent iThanhToan = new Intent(context, PaymentActivity.class);
+//                iThanhToan.putExtra("maban",maban);
+//                iThanhToan.putExtra("tenban",tenban);
+//                iThanhToan.putExtra("ngaydat",ngaydat);
+//                context.startActivity(iThanhToan);
                 break;
         }
     }
